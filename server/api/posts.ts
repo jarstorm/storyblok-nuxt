@@ -1,13 +1,6 @@
 export default defineEventHandler(async () => {
-  // $fetch
-  // useAsyncData
-  // useFetch
+  
   return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([{
-        id: 'post-id',
-        title: 'some post'
-      }])
-    }, 1000)
+    $fetch(`https://json-server-40zwhkzvn-jarstorm.vercel.app/posts`).then(data => resolve(data));    
   })
 })

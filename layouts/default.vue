@@ -1,7 +1,16 @@
 <template>
   <AuthGuard>
-    <Menu />
-    <slot />
+    <div class="flex flex-row">
+      <div class="min-h-max w-[88px]">
+        <Menu />
+      </div>
+      <div class="w-full">
+        <div class="p-20">
+          <slot />
+        </div>
+        <Footer />
+      </div>
+    </div>
   </AuthGuard>
 </template>
 

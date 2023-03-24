@@ -1,18 +1,6 @@
 <template>
   <section>
-    <div v-if="pending">
-      Loading posts...
-    </div>
-    <div v-else>
-      <p>Fetched from <span>/api/posts</span></p>
-      <div v-for="post in posts">
-        <article>
-          <p key="post.id">{{post.id}} - {{post.title}}</p>
-        </article>
-        <Icon icon="icon-home" />
-        <Posts />
-      </div>
-    </div>
+    <span>News page</span>
   </section>
 </template>
 

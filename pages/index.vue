@@ -1,23 +1,18 @@
 <template>
   <section>
-    <div v-if="pending">
-      Loading posts...
-    </div>
-    <div v-else>
-      <p>Fetched from <span>/api/posts</span></p>
-      <div v-for="post in posts">
-        <article key="post.id">
-          <nuxt-img
-            provider="storyblok"
-            src="/f/206536/512x340/ec034d8b73/polynesia-3021072__340.jpg"
-            sizes="sm:100vw md:50vw lg:400px"
-            :modifiers="{ filters: { brightness: -10 } }"
-            format="webp"
-          />
-          <p>{{post.id}} - {{post.title}}</p>
-          <Icon icon="icon-home" />
-          <Posts />
-        </article>
+    <div>
+      <span>This is the main page</span>
+      <span>List of posts. This comes from "our backend"</span>    
+      <div v-if="pending">
+        Loading posts...
+      </div>
+      <div v-else>
+        <p>Fetched from <span>/api/posts</span></p>
+        <div class="flex flex-row flex-wrap">
+          <div v-for="post in posts">
+            <SinglePost :data="{post}"/>
+          </div>
+        </div>
       </div>
     </div>
   </section>
