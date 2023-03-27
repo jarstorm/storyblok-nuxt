@@ -1,13 +1,12 @@
 <template>
   <section>
-    <div>
-      <span>Project list</span>
-      <span>This data comes from Storyblok. I use a REST query to get the data</span>    
+    <div class="flex flex-col w-max m-auto">
+      <h2>Project list</h2>
+      <span class="mt-20 mb-20">This data comes from Storyblok. I use a REST query to get the data from /api/projects</span>    
       <div v-if="pending">
         Loading data...
       </div>
-      <div v-else>
-        <p>Fetched from <span>/api/projects</span></p>
+      <div v-else>        
         <div class="flex flex-row">
           <button class="bg-gray-400 rounded-xl p-6 flex items-center justify-center m-10 cursor-pointer" @click="filterAction('all')">All</button>
           <button class="bg-gray-400 rounded-xl p-6 flex items-center justify-center m-10 cursor-pointer" @click="filterAction('cardano')">Only Cardano</button>

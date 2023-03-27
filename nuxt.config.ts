@@ -5,17 +5,17 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Cardano Vue POC',
-      link: [
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
-          crossorigin: ''
-        }
-      ]
+      // link: [
+      //   {
+      //     rel: 'preconnect',
+      //     href: 'https://fonts.googleapis.com'
+      //   },
+      //   {
+      //     rel: 'stylesheet',
+      //     href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+      //     crossorigin: ''
+      //   }
+      // ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },

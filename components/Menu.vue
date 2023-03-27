@@ -1,7 +1,7 @@
 <template>
-    <nav class="border-r border-green-700 h-full w-[88px]">
+    <nav class="border-r-2 border-green-700 h-full w-[62px]">
         <ul class="list-none flex flex-col">
-            <li class="flex justify-center items-center p-4">
+            <li class="cursor-pointer h-20 flex justify-center items-center mb-12">
                 <NuxtLink to="/">
                     <nuxt-img                        
                         src="/left-logo.svg"
@@ -9,7 +9,7 @@
                     />
                 </NuxtLink>
             </li>
-            <li class="flex justify-center items-center p-4 mt-24">
+            <li class="cursor-pointer h-20 flex justify-center items-center mb-12">
                 <NuxtLink to="/projects">
                     <nuxt-img                        
                         src="/icon-BoundingBox.svg"
@@ -17,7 +17,7 @@
                     />
                 </NuxtLink>
             </li>
-            <li class="flex justify-center items-center p-4">
+            <li class="cursor-pointer h-20 flex justify-center items-center mb-12">
                 <NuxtLink to="/news">
                     <nuxt-img                        
                         src="/icon-Calendar.svg"

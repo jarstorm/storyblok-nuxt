@@ -1,13 +1,13 @@
 <template>
   <section>
     <div>
-      <span>This is the main page</span>
-      <span>List of posts. This comes from "our backend"</span>    
-      <div v-if="pending">
+      <h2>This is the main page</h2>      
+      <div v-if="pending" class="mt-20 mb-20">
         Loading posts...
       </div>
-      <div v-else>
-        <p>Fetched from <span>/api/posts</span></p>
+      <div v-else class="mt-20 mb-20">
+        <span class="text-blue-800 block mb-10 text-lg">List of posts. This comes from "our backend" /api/posts</span>
+        
         <div class="flex flex-row flex-wrap">
           <div v-for="post in posts">
             <SinglePost :data="{post}"/>
